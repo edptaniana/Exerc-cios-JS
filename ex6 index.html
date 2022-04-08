@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Execicios JS</title>
+</head>
+<body>
+    <h1>Sexto JS</h1>
+    Nome:<input onclick="limpar1()"id="nome" type="text">
+    Sobrenome:<input onclick="limpar2()" id="sobrenome" type="text">
+    <button onclick="alerta()">confirmar</button>
+    <script>
+
+
+function alerta() {
+    const nome = String(document.getElementById('nome').value)
+    const sobrenome = String(document.getElementById('sobrenome').value)
+    alert(`Olá, ${nome} ${sobrenome}!`)
+}
+function limpar1() {
+    document.getElementById('nome').value="";
+}
+function limpar2() {
+    document.getElementById('sobrenome').value="";
+}
+    </script>
+</body>
+</html>

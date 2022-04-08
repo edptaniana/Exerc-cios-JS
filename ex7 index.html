@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Execicios JS</title>
+</head>
+<body>
+    <h1>Sétimo JS</h1>
+    Digite um número:<input type="number" id="numero1">
+    Digite um número:<input type="number" id="numero2">
+    <button onclick="calculo()">Calcular</button>
+    <ul id="lista"></ul>
+
+    <script>
+
+function calculo() {
+    const lista = document.getElementById('lista')
+    const numero1 = parseInt(document.getElementById('numero1').value)
+    const numero2 = parseInt(document.getElementById('numero2').value)
+    const soma = numero1 + numero2
+    const subtracao = numero1 - numero2
+    const divisao = numero1 / numero2
+    const multiplicacao = numero1 * numero
+    const potenciacao = Math.pow(numero1, numero2)
+    lista.innerHTML+=(`<li>Soma = ${soma}</li>`)
+    lista.innerHTML+=(`<li>Subtração = ${subtracao}</li>`)
+    lista.innerHTML+=(`<li>Divisão = ${divisao}</li>`);
+    lista.innerHTML+=(`<li>Multiplicação = ${multiplicacao}</li>`)
+    lista.innerHTML+=(`<li>Potenciação = ${potenciacao}</li>`)
+    </script>
+</body>
+</html>
